@@ -22,7 +22,10 @@ import androidx.compose.ui.geometry.Offset
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.input.pointer.pointerInput
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import com.masdika.pelidoku.ui.theme.selectedCell
 import com.masdika.pelidoku.ui.theme.shadowCell
 import com.masdika.pelidoku.ui.theme.sudokuBorder
@@ -122,7 +125,14 @@ fun SudokuBoard(
                         ) {
                             Text(
                                 text = if (cell == 0) "" else cell.toString(),
-                                style = MaterialTheme.typography.bodyLarge
+                                style = TextStyle(
+                                    fontSize = 36.sp,
+                                    fontWeight = FontWeight.Normal,
+                                    fontFamily = MaterialTheme.typography.bodyLarge.fontFamily
+                                )
+                                /*
+                                    Number in box style
+                                */
                             )
                         }
                     }

@@ -61,7 +61,7 @@ fun NumberButton(
         Text(
             text = number.toString(),
             style = TextStyle(
-                fontSize = 36.sp,
+                fontSize = 32.sp,
                 fontWeight = FontWeight.Normal,
                 fontFamily = MaterialTheme.typography.bodyLarge.fontFamily
             )

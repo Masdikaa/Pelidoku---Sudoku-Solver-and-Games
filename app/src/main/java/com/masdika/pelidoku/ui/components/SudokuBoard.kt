@@ -126,7 +126,7 @@ fun SudokuBoard(
                             Text(
                                 text = if (cell == 0) "" else cell.toString(),
                                 style = TextStyle(
-                                    fontSize = 36.sp,
+                                    fontSize = 32.sp,
                                     fontWeight = FontWeight.Normal,
                                     fontFamily = MaterialTheme.typography.bodyLarge.fontFamily
                                 )
